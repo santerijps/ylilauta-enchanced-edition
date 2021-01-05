@@ -1,0 +1,25 @@
+{
+  "name":"Ylilauta Enchanced Edition",
+  "description":"Ylilauta with enchanced subtle features (some from the old version before the update)",
+  "version":"1.1.0",
+  "manifest_version":2,
+  "content_scripts":[
+    {
+      "matches":[
+        "https://ylilauta.org/*",
+        "https://ylilauta.org/*/*"
+      ],
+      "js":[
+        "src/js/global.js"
+      ]
+    },
+    {
+      "matches":[
+        "https://ylilauta.org/*/*"
+      ],
+      "js":[
+        "src/js/thread.js"
+      ]
+    }
+  ]
+}
